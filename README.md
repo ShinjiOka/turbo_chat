@@ -1,24 +1,27 @@
-# README
+scope
+・https://qiita.com/ngron/items/14a39ce62c9d30bf3ac3
+・https://www.sejuku.new/blog/26994
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+after_create_commit
+・https://railsguides.jp/active_record_callbacks.html ← 未読
 
-Things you may want to cover:
+<%= @user&.email || @single_room.name %> index.html.erb
+・https://stackoverflow.com/questions/36812647/what-does-ampersand-dot-mean-in-ruby
 
-* Ruby version
+render 部分テンプレート
+・https://pikawaka.com/rails/partial_template
 
-* System dependencies
+モデルの関連付け
+・https://qiita.com/aiorange19/items/2120d91912bc643273da
 
-* Configuration
+form_with
+・https://pikawaka.com/rails/form_with#disableed
 
-* Database creation
+==========================================================================
 
-* Database initialization
+エラー
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+部分テンプレートのファイルを複数形にしたらエラーが出る。
+例
+messages/_messages.html.erb ← x
+messages/_message.html.erb ← ○
